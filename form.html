@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Survey</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="form.css">
+  </head>
+  <body>
+    <div class="container py-5">
+        <div class="container-form">
+            <div class="header">
+                <h3>Pendaftaran Tiket Konser Svara Apocalypse</h3>
+            </div>
+            <form action="">
+                <label for="nama">Nama</label><br>
+                <input type="text" placeholder="Nama anda" id="nama"><br><br>
+                <label for="nim">Nomor pesanan</label><br>
+                <input type="text" placeholder="Nomor pesanan anda" id="nim"><br>
+                <p class="pt-3">Seat level :</p>
+                <input type="radio" name="peminatan" id="programming" value="programming">
+                <label for="programming">Zone A</label><br>
+                <input type="radio" name="peminatan" id="desain" value="desain">
+                <label for="programming">Zone B</label><br>
+                <input type="radio" name="peminatan" id="jaringan" value="jaringan">
+                <label for="programming">Zone C</label><br>
+                <input type="radio" name="peminatan" id="data" value="data">
+                <label for="programming">Party</label><br><br>
+                <label for="">Pesan</label><br>
+                <textarea placeholder="Kritik dan Saran untuk Svara APOCALYPSE" name="alamat" id="alamat" cols="30" rows="5"></textarea><br><br>
+                <label for="angkatan">Pilih snack</label><br>
+                <select name="angkatan" id="angkatan">
+                  <option value="none" selected>-</option>
+                  <option value="2019">Bir</option>
+                  <option value="2020">Jagung Bakar</option>
+                  <option value="2021">Anggur</option>
+                  <option value="2022">Komik</option>
+                </select><br><br>
+                <label for="tanggal">Masukkan tanggal isi survey</label><br>
+                <input type="date" id="tanggal" name="tanggal" ><br><br>
+                <div class="button">
+                    <button type="submit" onclick="kirimData()">Kirim</button>
+                </div>
+            </form>
+            <!--Button Back-->
+            <a href="index.html">
+                <div class="button-back pt-3 text-center">
+                    <button type="button" class="btn btn-outline-dark">Back</button>
+                </div>
+            </a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>

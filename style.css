@@ -1,0 +1,25 @@
+body{
+    background-image: url(Background.jpg);
+    background-size: cover;
+}
+
+
+.card-index{
+    background-color: rgba(186, 133, 133, 0.5);
+    width: 80%;
+    display: block;
+    margin: auto;
+    border-radius: 30px 30px;
+}
+
+.button {
+    justify-content: start;
+    display: flex;
+}
+.button button{
+    background-color: white;
+    border: 10px white solid;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
